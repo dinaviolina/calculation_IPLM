@@ -563,7 +563,6 @@ elif pilihan_uplm == "UPLM 6":
     st.subheader("Perhitungan UPLM 6")
     populasi_kabkot = st.number_input("Jumlah populasi kabupaten :", )
     
-
     # UNTUK PERPUSTAKAAN UMUM
     st.markdown(":orange[**Perpustakaan Umum**]")
     jumlah_sosialisasi_kabkota = st.number_input("Jumlah keterlibatan masyarakat sosialisasi perpustakaan kabupaten:", )
