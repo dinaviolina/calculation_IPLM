@@ -575,9 +575,9 @@ elif pilihan_uplm == "UPLM 6":
     jumlah_civitas_sosialisasi_sdMi = st.number_input("Jumlah civitas keterlibatan sekolah perpustakaan SD/MI:", )
     jumlah_civitas_sosialisasi_smp = st.number_input("Jumlah civitas keterlibatan sekolah perpustakaan SMP/MTS:", )
     jumlah_civitas_sosialisasi_sma = st.number_input("Jumlah civitas keterlibatan sekolah perpustakaan SMA/MA:", )
-    civ_sd = st.number_input("Jumlah civ sd :", )
-    civ_smp = st.number_input("Jumlah civ smp :", )
-    civ_sma = st.number_input("Jumlah civ sma :", )
+    civ_sd = st.number_input("Jumlah populasi kabupaten :", )
+    civ_smp = st.number_input("Jumlah populasi kabupaten :", )
+    civ_sma = st.number_input("Jumlah populasi kabupaten :", )
     
     # UNTUK PERPUSTAKAAN PERGURUAN TINGGI
     st.markdown(":orange[**Perpustakaan Perguruan Tinggi**]")
