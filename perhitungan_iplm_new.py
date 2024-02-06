@@ -414,7 +414,7 @@ elif pilihan_uplm == "UPLM 4":
         perhitungan_ds_u = kunj_ds / (populasi_kun if populasi_kun != 0 else 1)
         st.write("Hasil Perhitungan Kunjungan Desa : {:.6f}".format(perhitungan_ds_u))
 
-        kunj_umum = kunj_kab + kunj_kec + kunj_ds
+        kunj_umum = perhitungan_kb_u + perhitungan_kc_u + perhitungan_ds_u
         st.write("Ratio Perpustakaan Umum : {:.6f}".format(kunj_umum))
         return kunj_umum
         
