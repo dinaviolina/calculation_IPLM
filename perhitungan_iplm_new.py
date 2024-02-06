@@ -410,18 +410,18 @@ elif pilihan_uplm == "UPLM 4":
             kunj_ds = st.number_input("Jumlah kunjungan per hari Perpustakaan Desa/Kelurahan : ")
         
             # Melakukan perhitungan hanya jika populasi tidak sama dengan nol
-            perhitungan_kb_u = float(kunj_kab) / populasi_kun
-            perhitungan_kc_u = float(kunj_kec) / populasi_kun
-            perhitungan_ds_u = float(kunj_ds) / populasi_kun
+            perhitungan_kb_u = kunj_kab / populasi_kun
+            perhitungan_kc_u = kunj_kec / populasi_kun
+            perhitungan_ds_u = kunj_ds / populasi_kun
         
             # Menghitung total kunjungan untuk perpustakaan umum
             kunj_umum = perhitungan_kb_u + perhitungan_kc_u + perhitungan_ds_u
         
             # Menampilkan hasil
-            st.write("Hasil Perhitungan Kunjungan Kab : {:.6f}".format(perhitungan_kb_u))
-            st.write("Hasil Perhitungan Kunjungan Kec : {:.6f}".format(perhitungan_kc_u))
-            st.write("Hasil Perhitungan Kunjungan Desa : {:.6f}".format(perhitungan_ds_u))
-            st.write("Ratio Perpustakaan Umum : {:.6f}".format(kunj_umum))
+            st.write("Hasil Perhitungan Kunjungan Kab : {:.13f}".format(perhitungan_kb_u))
+            st.write("Hasil Perhitungan Kunjungan Kec : {:.13f}".format(perhitungan_kc_u))
+            st.write("Hasil Perhitungan Kunjungan Desa : {:.13f}".format(perhitungan_ds_u))
+            st.write("Ratio Perpustakaan Umum : {:.13f}".format(kunj_umum))
         
             # Mengembalikan nilai kunjungan umum
             return kunj_umum
