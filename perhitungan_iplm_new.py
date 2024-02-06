@@ -400,8 +400,8 @@ elif pilihan_uplm == "UPLM 3":
 elif pilihan_uplm == "UPLM 4":
     st.subheader("Perhitungan UPLM 4")
     def kunjungan_perpus_umum():
-    st.markdown(":green[**Perpustakaan Umum**]")
-    populasi_kun = st.number_input("Jumlah Populasi Kabupaten/Kota")
+        st.markdown(":green[**Perpustakaan Umum**]")
+        populasi_kun = st.number_input("Jumlah Populasi Kabupaten/Kota")
 
         if populasi_kun != 0:
             # Pengguna memasukkan kunjungan per hari untuk setiap level perpustakaan
