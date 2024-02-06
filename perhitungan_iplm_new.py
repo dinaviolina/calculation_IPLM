@@ -418,10 +418,10 @@ elif pilihan_uplm == "UPLM 4":
             kunj_umum = perhitungan_kb_u + perhitungan_kc_u + perhitungan_ds_u
         
             # Menampilkan hasil
-            st.write("Hasil Perhitungan Kunjungan Kab : {:.13f}".format(perhitungan_kb_u))
-            st.write("Hasil Perhitungan Kunjungan Kec : {:.13f}".format(perhitungan_kc_u))
-            st.write("Hasil Perhitungan Kunjungan Desa : {:.13f}".format(perhitungan_ds_u))
-            st.write("Ratio Perpustakaan Umum : {:.13f}".format(kunj_umum))
+            st.write("Hasil Perhitungan Kunjungan Kab : {:.13f}".format(perhitungan_kb_u * 100000))
+            st.write("Hasil Perhitungan Kunjungan Kec : {:.13f}".format(perhitungan_kc_u * 100000))
+            st.write("Hasil Perhitungan Kunjungan Desa : {:.13f}".format(perhitungan_ds_u * 100000))
+            st.write("Ratio Perpustakaan Umum : {:.13f}".format(kunj_umum * 100000))
         
             # Mengembalikan nilai kunjungan umum
             return kunj_umum
