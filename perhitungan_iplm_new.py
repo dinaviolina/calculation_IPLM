@@ -490,7 +490,7 @@ elif pilihan_uplm == "UPLM 4":
     total_kunjungan_perpustakaan_khusus = kunjungan_perpus_khusus()
 
     uplm4 = (((0.5 * total_kunjungan_perpustakaan_umum) + (0.2 * total_kunjungan_perpustakaan_sekolah) + (0.2 * total_kunjungan_perpustakaan_pt) + (0.1 * total_kunjungan_perpustakaan_khusus)) * angka_koreksi_uplm4)
-    st.write("Hasil UPLM4 : {:.6f}".format(uplm4))
+    st.write("Hasil UPLM4 : {:.6f}".format(uplm4 * 100000))
 
 elif pilihan_uplm == "UPLM 5":
     st.subheader("Perhitungan UPLM 5")
